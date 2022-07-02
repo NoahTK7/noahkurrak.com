@@ -1,0 +1,151 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Noah Kurrack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media all and (min-width:0px) and (max-width: 768px) {
+            body {
+                text-align: center;
+                padding: 0px;
+            }
+        }
+        
+        @media all and (min-width:769px) {
+            body {
+                text-align: center;
+                padding: 3em 8em 3em 8em;
+            }
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        a {
+            color: black;
+        }
+        
+        body {
+            font: 20px 'Lato', sans-serif;
+            color: #333;
+        }
+        
+        .frame {
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        
+        button {
+            margin: 20px;
+            outline: none;
+        }
+        
+        .custom-btn {
+            width: 140px;
+            height: 40px;
+            padding: 10px 25px;
+            border: 2px solid #000;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .btn-wide {
+            width: 320px;
+        }
+        
+        .btn-main-1 {
+            line-height: 39px;
+            padding: 0;
+        }
+        
+        .btn-main-1:hover {
+            background: transparent;
+            color: #000;
+        }
+        
+        .btn-main-1 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn-main-1:before,
+        .btn-main-1:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: #000;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-main-1:before {
+            height: 0%;
+            width: 2px;
+        }
+        
+        .btn-main-1:after {
+            width: 0%;
+            height: 2px;
+        }
+        
+        .btn-main-1:hover:before {
+            height: 100%;
+        }
+        
+        .btn-main-1:hover:after {
+            width: 100%;
+        }
+        
+        .btn-main-1 span:before,
+        .btn-main-1 span:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            background: #000;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-main-1 span:before {
+            width: 2px;
+            height: 0%;
+        }
+        
+        .btn-main-1 span:after {
+            width: 0%;
+            height: 2px;
+        }
+        
+        .btn-main-1 span:hover:before {
+            height: 100%;
+        }
+        
+        .btn-main-1 span:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Noah Kurrack</h1>
+    <div class="frame">
+        <p>I'm a senior CS student at NYU's Courant Institute, graduating in May of 2023.</p>
+        <p>I'm passionate about building software that deals with big data and cloud systems, and I'm interested in the finance, transportation, and energy sectors.</p>
+        <p>Please check out my <a href="https://www.linkedin.com/in/noahkurrack/">LinkedIn</a> to see my latest experience building the future of renewable energy software at <a href="https://orendapower.com/">Orenda</a>.</p>
+    </div>
+    <div class="frame">
+        <a href="https://github.com/NoahTK7"><button class="custom-btn btn-main-1"><span>GitHub</span></button></a>
+        <a href="https://www.linkedin.com/in/noahkurrack"><button class="custom-btn btn-main-1"><span>LinkedIn</span></button></a>
+    </div>
+</body>
